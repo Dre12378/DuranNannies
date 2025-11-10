@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPostSlugs } from "@/lib/wordpress";
+import { getPostBySlug, getAllPostSlugs } from "@/src/lib/wordpress";
 
 // This tells Next.js which slugs to pre-render at build time
 export async function generateStaticParams() {
