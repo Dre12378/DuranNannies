@@ -18,7 +18,7 @@ export async function GET(request: Request) {
   }
 
   // 3. Enable Draft Mode by setting a cookie
-  draftMode().enable();
+  (await draftMode()).enable();
 
   // 4. Redirect to the post's path
   // The `draftMode().enable()` cookie will now be present on this request
